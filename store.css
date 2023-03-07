@@ -1,0 +1,184 @@
+.parent-of-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 50px;
+}
+
+.card {
+    margin: 30px auto;
+}
+
+.card-img-top {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: crimson;
+}
+
+.price-btn {
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+
+}
+
+.sweatr {
+    width: 60%;
+}
+
+.cong-of-clinte {
+    background-color: #3a86ff;
+    color: #fff;
+    font-size: 30px;
+    width: 35%;
+    padding: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    transition: all 1s;
+}
+
+.show-product {
+    background-color: #3a86ff;
+    color: #fff;
+    font-size: 20px;
+    width: 15%;
+    padding: 10px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 1s;
+}
+
+.show-product:active {
+    transition: all 0.5s;
+    padding: 15px 15px;
+}
+
+
+/* ============================
+    black page show producte
+==============================*/
+
+.back-screen {
+    background-color: #1d3557;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    transition: 1s all;
+    z-index: 21;
+    overflow-y: auto;
+}
+
+.back-screen #close {
+    color: #fff;
+    font-size: 35px;
+    opacity: 1;
+}
+
+.item-conainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(252, 250, 247);
+    color: black;
+    width: 80vw;
+    margin: 30px auto;
+    border-radius: 10px;
+    border-bottom: #d90429 solid 4px;
+}
+
+.img-title-parent {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.img-title-parent img {
+    margin: 3px 0 4px 20px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+}
+
+#inputProducte {
+    width: 40px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: #ef233c solid 2px;
+    outline-style: none;
+}
+
+.price {
+    color: #d90429;
+    font-size: 25px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.allcol {
+    color: #fff;
+    font-size: 30px;
+}
+
+.allcol p {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.allcol #totalPrice {
+    margin-right: 30px;
+}
+
+
+.yellow{
+    width: 58%;
+}
+
+.Nike{
+    width: 73%;
+} 
+
+.Nike2{
+    width: 67%;
+} 

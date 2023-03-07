@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="prism.css">
+  <script defer src="prism.js"></script>
+  <script defer src="javascript/8-slider.js"></script>
+  <script defer src="javascript/main.js"></script>
+  <script defer src="javascript/9-toggle-taps.js"></script>
+  <script defer src="javascript/11-Tootstrab.js"></script>
+</head>
+
+<body id="body">
+  <header id="heder" class="myheader">
+    <h1 dir="rtl" class="arb" id="hh">
+      <a style="text-decoration: none !important; color: #fff !important" href="index.html">Courses4Arab</a>
+    </h1>
+
+    <nav>
+      <ul class="parent">
+        <li>
+          <a class="eng" href="on line store.html">On line store</a>
+        </li>
+        <li><a class="eng" href="8-slider.html"> Slide Show </a></li>
+        <li id="dark" class="eng mode">change mode</li>
+
+        <li class="eng" id="changecolor">
+          Change Color
+          <ul class="eng" id="hideenul" style="display: none">
+            <li class="eng" id="headerbg">Header BG</li>
+            <li class="eng" id="titlebg">Title BG</li>
+            <li class="eng" id="titlecolor">Title Color</li>
+            <li class="eng" id="sectionbg">Section BG</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+
+
+
+
+<!-- Tootstrab -->
+    <section>
+      <h1>TOOTstrap</h1>
+
+      <div class="parent-card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/boda.jpg" alt="Avatar" style="width:500px;height:450px; ">
+            </div>
+            <div class="flip-card-back">
+              <h2>Abdulraman Salah</h2>
+              <p>programer & Engineer 💻</p>
+              <p>We love that guy &#129505; </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <details class="det" dir="rtl">
+        <summary>أكواد الـ HTML</summary>
+        <article class="line-numbers all-cods">
+          <div class="view-code">Html</div>
+          <button dir="ltr" class="copycode">Copy</button>
+          <pre class="pre"><code class="language-html">&lt;div class=&quot;parent-card&quot;&gt;
+&lt;div class=&quot;flip-card&quot;&gt;
+&lt;div class=&quot;flip-card-inner&quot;&gt;
+  &lt;div class=&quot;flip-card-front&quot;&gt;
+      &lt;img src=&quot;img/boda.jpg&quot; alt=&quot;Avatar&quot; style=&quot;width:500px;height:450px; &quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flip-card-back&quot;&gt;
+      &lt;h2&gt;Abdulraman Salah&lt;/h2&gt;
+      &lt;p&gt;programer &amp; Engineer 💻&lt;/p&gt;
+      &lt;p&gt;We love that guy &amp;#129505;	&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </article>
+      </details>
+
+
+
+      <details class="det" dir="rtl">
+        <summary>أكواد الـ Css</summary>
+        <article class="line-numbers all-cods">
+          <div class="view-code">Css</div>
+          <button dir="ltr" class="copycode">Copy</button>
+          <pre class="pre cs"><code class="language-css">.flip-card {
+background-color: transparent;
+width: 500px;
+height: 450px;
+/* border: 1px solid #f1f1f1; */
+perspective: 1000px;
+/* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+/* Safari */
+backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+background-color: dodgerblue;
+color: white;
+transform: rotateY(180deg);
+}</code></pre>
+
+        </article>
+      </details>
+
+
+
+      <details class="det" dir="rtl">
+        <summary>أكواد الـ javascript</summary>
+        <article class="line-numbers all-cods">
+          <div class="view-code">java script</div>
+          <button dir="ltr" class="copycode">Copy</button>
+          <pre class="pre js"><code class="language-js">const allcopy = document.querySelectorAll(".copycode")
+allcopy.forEach(item => {
+    item.addEventListener("click", (eo) => {
+        const copied = item.nextElementSibling.innerText
+
+        navigator.clipboard.writeText(copied)
+
+        item.innerText = `copied!`
+
+        setTimeout(() => {
+            item.innerText = `Copy!`
+        }, 1000);
+    })
+});</code></pre>
+
+        </article>
+      </details>
+
+
+    </section>
+
+    <!-- 9- toggle taps -->
+    <section>
+      <h1>9- toggle taps</h1>
+
+      <div class="toogle-bt">
+        <btutton class="active-taps" id="tgbtn">Finland</btutton>
+        <btutton id="tgbtn">Denmark</btutton>
+        <btutton id="tgbtn">Switzerland</btutton>
+      </div>
+
+      <div class="parent-of-content">
+        <div class="content-toogle active-cont">
+          <h2>4- Fun Facts About Finland</h2>
+          <ol>
+            <li>Finland is the world's happiest country</li>
+            <li>Finns are the world's biggest coffee drinkers</li>
+            <li>There are 187,888 lakes in Finland</li>
+            <li>Most Finnish children have two birthday parties</li>
+          </ol>
+        </div>
+
+        <div class="content-toogle">
+          <h2>3 Fun Facts About Denmark</h2>
+          <ol>
+            <li>Denmark is the second happiest country in the world</li>
+            <li>Denmark has 444 islands</li>
+            <li>Denmark has The oldest flag in the world</li>
+          </ol>
+        </div>
+
+        <div class="content-toogle">
+          <h2>5 Fun Facts About Switzerland</h2>
+          <ol>
+            <li>Switzerland is the third happiest country in the world</li>
+            <li>They Make & Eat a Lot of Chocolate</li>
+            <li>Switzerland Has 7000 Lakes</li>
+            <li>25% of the Population Is Foreign</li>
+            <li>One of the Most Expensive Places to Live In</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- Slide Show -->
+    <section>
+      <h1>Slide Show</h1>
+
+      <!-- parent The Elements Img -->
+      <div id="Zoonimg">
+
+      </div>
+
+      <div class="Allbuttons">
+        <button id="Pre">&lt; Pre</button>
+
+        <div class="number-buttons">
+          <button class="mybutton active-num">1</button>
+          <button class="mybutton">2</button>
+          <button class="mybutton">3</button>
+          <button class="mybutton">4</button>
+          <button class="mybutton">5</button>
+        </div>
+
+        <button id="Next">Next &gt;</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

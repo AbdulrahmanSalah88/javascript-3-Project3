@@ -329,7 +329,7 @@ footer {
 #myframe {
   border-radius: 10px;
   animation: mymove 1s 1;
-  width: 800px;
+  width: 900px;
   height: 400px;
 }
 
@@ -1005,10 +1005,7 @@ form {
 
 }
 
-.view-code {
-  position: absolute;
 
-}
 
 .copycode {
 
